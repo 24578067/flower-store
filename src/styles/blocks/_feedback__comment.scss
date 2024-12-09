@@ -1,0 +1,36 @@
+.feedback__comment {
+    // width: 540px;
+    position: relative;
+    padding: 20px;
+    background-color: var(--feedback-comment-bg);
+    border-radius: 10px;
+}
+.feedback__comment__title {
+    & .name {
+        font-weight: 400;
+        font-style: italic;
+        font-size: 18px;
+        appearance: 42%;
+    }
+    & .info {
+        font-weight: 400;
+        font-size: 14px;
+        opacity: 42%;
+    }
+}
+
+.feedback__comment__rating {
+    margin: 10px 0;
+}
+
+.feedback__comment__text {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+.feedback__comment__img {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+}

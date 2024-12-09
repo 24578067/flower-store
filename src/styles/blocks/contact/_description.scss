@@ -1,0 +1,80 @@
+.description-contact {
+    margin: 60px 0;
+    
+    &__content {
+        display: flex;
+        column-gap: 30px;
+
+        
+        &__text {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            width: 825px;
+
+            p {
+                line-height: 1.5;
+            }
+    
+            & .red-line {
+                display: flex;
+                flex-direction: column;
+                row-gap: 15px;
+            }
+
+            & .flower-centers-contact {
+                p {
+                    font-size: 17px;
+                    font-weight: 400;
+                }
+
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    column-gap: 20px;
+                    padding: 10px 20px;
+                    background-color: #EDF8EF;
+                    border-radius: 24px;
+
+                    span {
+                        color: var(--accent-color);
+                        font-size: 18px;
+                    }
+
+                    p {
+                        text-align: right;
+                        font-weight: 300;
+                        color: #000;
+
+                        @include media-down($x) {
+                            text-align: start;
+                        }
+                    }
+                }
+            }
+
+            & .work-time {
+                font-size: 17px;
+                font-weight: 300;
+
+                span {
+                    font-weight: 400;
+                }
+
+                & .email {
+                    color: var(--accent-color);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    @include media-down($lg) {
+        margin: 40px 0;
+    }
+
+    @include media-down($md) {
+        margin: 30px 0;
+    }
+}

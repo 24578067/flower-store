@@ -1,0 +1,67 @@
+.flower-centers {
+    background-color: var(--flower-centers-bg);
+    padding: 40px 0;
+    margin: 60px 0;
+
+    @include media-down($lg) {
+        margin: 40px 0;
+    }
+
+    @include media-down($md) {
+        margin: 30px 0;
+    }
+}
+
+.flower-centers__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.flower-centers__row {
+    display: flex;
+    justify-content: space-between;
+    
+    @include media-down($lg) {
+        display: block;
+        
+    }
+
+    @include media-down($md) {
+        
+    }
+}
+
+.flower-centers__column {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    row-gap: 8px;
+    
+    & a{
+        padding: 8px;
+        font-family: "Montserrat", sans-serif;
+        color: var(--black-color);
+        font-size: 20px;
+        font-weight: 400;
+        transition: 0.1s ease-in;
+
+        &:hover {
+            background-color: var(--flower-centers-hover);
+            border-radius: 5px;
+            color: var(--white-color);
+            font-weight: 500;
+        }
+
+        @include media-down($lg) {
+            font-size: 18px;
+
+            &:last-child {
+                margin-bottom: 8px;
+            }
+         }
+    }
+
+    @include media-down($lg) {
+        width: 100%;
+    }
+}

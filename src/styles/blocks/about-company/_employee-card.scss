@@ -1,0 +1,17 @@
+.employee-card {
+    max-width: 192px;
+
+    & .title {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 24px;
+        margin-top: 5px;
+        margin-bottom: 3px;
+    }
+
+    & .desc {
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}

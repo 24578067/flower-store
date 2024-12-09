@@ -1,0 +1,15 @@
+.content {
+    overflow: hidden;
+    
+    &__flex {
+        display: flex;
+        column-gap: 30px;
+    }
+
+    @include media-down($lg) {
+        &__right {
+            display: none;
+        }
+    }
+}
+

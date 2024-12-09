@@ -1,0 +1,46 @@
+.sort {
+    margin-top: -30px;
+    margin-bottom: 30px;
+
+    @include media-down($lg) {
+        margin-top: -20px;
+    }
+
+    @include media-down($md) {
+        margin-top: -10px;
+    }
+}
+
+.sort__content {
+    display: flex;
+    justify-content: space-between;
+
+    & .total {
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    & .criterion {
+        display: flex;
+        column-gap: 15px;
+        font-weight: 300;
+        font-size: 15px;
+
+        &__popular {
+            display: flex;
+            column-gap: 5px;
+            font-weight: 400;
+        }
+
+        p {
+            &:last-child {
+                opacity: 64%;
+            }
+        }
+    }
+
+    @include media-down($md) {
+        flex-direction: column;
+        row-gap: 5px;
+    }
+}

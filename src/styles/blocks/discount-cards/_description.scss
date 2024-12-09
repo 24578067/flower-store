@@ -1,0 +1,6 @@
+.description__content__text {
+    & .discount-cards {
+        display: flex;
+        column-gap: 20px;
+    }
+}

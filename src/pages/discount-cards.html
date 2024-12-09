@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @@include('base/meta.html', { "title": "Дисконтные карты" })
+    @@include('base/styles.html')
+  </head>
+
+  <body>
+    @@include('blocks/header.html')
+    @@include('blocks/catalog/divisions.html', {sectionClass: "", text1: "Главная", arrow1: ">", noneClass2: "none-2", text2: "", arrow2: "", noneClass3: "none-3", text3: "", arrow3: "", text4: "Дисконтные карты"}) 
+    @@include('blocks/discount-cards/description.html')
+    @@include('blocks/footer.html')
+    @@include('base/scripts.html')
+  </body>
+</html>

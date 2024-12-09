@@ -1,0 +1,37 @@
+.about-company-desc {
+    max-width: 825px;
+    margin-top: 60px;
+
+    @include media-down($lg) {
+        margin-top: 20px;
+    }
+}
+
+.description__title {
+    margin-bottom: 30px;
+}
+
+.description__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    h3 {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 700;
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    & .red-line {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}

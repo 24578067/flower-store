@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @@include('base/meta.html', { "title": "Каталог" })
+    @@include('base/styles.html')
+  </head>
+
+  <body>
+    @@include('blocks/header.html')
+    @@include('blocks/catalog/divisions.html', {sectionClass: "", text1: "Главная", arrow1: ">", text2: "Каталог цветов", arrow2: ">", text3: "Для мамы", arrow3: ">", text4: "На день рождения"}) 
+    @@include('blocks/parameters-block.html', {"title": "Цветы для мамы на день<br /> рождения в Москве"}) 
+    @@include('blocks/catalog/sort.html')
+    @@include('blocks/season-offer.html', {sectionClass: "", titleClass: "", title: "", btnClass: "season-offer__btn--none", btnText: ""})
+    @@include('blocks/best-seller.html', {sectionClass: "", titleClass: "", title: "", btnClass: "season-offer__btn--none", btnText: ""})
+    @@include('blocks/with-action.html', {sectionClass: "", titleClass: "", title: "", btnClass: "season-offer__btn--none", btnText: ""}) 
+    @@include('blocks/catalog/viewed.html')
+    @@include('blocks/season-offer.html', {sectionClass: "season-offer--margin", titleClass: "", title: "", btnClass: "season-offer__btn--none", btnText: ""})
+    @@include('blocks/footer.html')
+    @@include('base/scripts.html')
+  </body>
+</html>

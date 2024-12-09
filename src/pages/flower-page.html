@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @@include('base/meta.html', { "title": "Карточка цветка" })
+    @@include('base/styles.html')
+  </head>
+
+  <body>
+    @@include('blocks/header.html')
+    @@include('blocks/catalog/divisions.html', {sectionClass: "divisions--margin", text1: "Главная", arrow1: ">", text2: "Букеты", arrow2: ">", noneClass3: "none-3", text3: "", arrow3: "", text4: "Гладиолус"}) 
+    @@include('blocks/flower-page/flower-info.html')
+    @@include('blocks/bouquet-page/might-like.html')
+    @@include('blocks/bouquet-page/why-we.html')
+    @@include('blocks/footer.html')
+    @@include('base/scripts.html')
+  </body>
+</html>

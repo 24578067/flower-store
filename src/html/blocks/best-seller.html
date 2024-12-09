@@ -1,0 +1,35 @@
+<section class="best-seller">
+  <div class="container">
+    <div class="best-seller__title">
+      <h2 class="title-2">@@title</h2>
+    </div>
+    <div class="best-seller__cards">
+      @@include('blocks/card-flower.html', { class: "", src:
+      "./../images/flowers/bouquet/1600-6-with-water.jpg", price: "1600 ₽",
+      disc: "", desc: "Минибукет 1600-6 (с водой)" })
+
+      @@include('blocks/card-flower.html', { class: "", src:
+      "./../images/flowers/bouquet/1600-6.jpg", price: "1600 ₽", disc: "", desc:
+      "Минибукет 1600-6" }) 
+
+      @@include('blocks/card-flower.html', { class: "",
+      src: "./../images/flowers/bouquet/freedom.jpg", price: "5900 ₽", disc: "",
+      desc: "Роза Freedom 51 шт." }) 
+
+      @@include('blocks/card-flower.html', {
+      class: "", src: "./../images/flowers/bouquet/1400-3.jpg", price: "1400 ₽",
+      disc: "", desc: "Минибукет 1400-3" }) 
+
+      @@include('blocks/card-flower.html',
+      { class: "card-flower__img--new", src:
+      "./../images/flowers/bouquet/velvet-season.jpg", price: "1300 ₽", disc:
+      "", desc: "«Бархатный сезон»" }) 
+
+      @@include('blocks/card-flower.html', {
+      class: "card-flower__img--water", src:
+      "./../images/flowers/bouquet/nobilis.jpg", price: "99 ₽", disc: "", desc:
+      "Нобилис" })
+    </div>
+    <button class="@@btnClass">@@btnText</button>
+  </div>
+</section>

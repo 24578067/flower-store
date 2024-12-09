@@ -1,0 +1,37 @@
+.nav-list {
+    width: 255px;
+
+    &__margin {
+        margin-top: 60px;
+    }
+    
+
+    &__item {
+        padding: 15px 0 15px 15px;
+
+        a {
+            color: var(--accent-color);
+
+            img {
+                margin-right: 10px;
+            }
+        }
+        
+    }
+
+    @include media-down($l) {
+        max-width: 200px;
+    }
+
+    @include media-down($lg) {
+        display: none;
+    }
+
+}
+
+.active-item {
+    background-color: rgb(75, 180, 94, .1);
+}
+
+
+

@@ -1,0 +1,42 @@
+.divisions {
+    margin-top: 25px;
+
+    &--margin {
+        margin-bottom: 20px;
+    }
+
+    @include media-down($lg) {
+        display: none;
+    }
+}
+
+.divisions__content {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    a {
+        color: var(--black-color);
+
+        &:hover {
+            color: #000000;
+        }
+    }
+
+    p {
+        font-size: 11px;
+
+        &:last-child {
+            font-size: 14px;
+            opacity: 42%;
+        }
+    }
+}
+
+.none-2 {
+    display: none;
+}
+
+.none-3 {
+    display: none;
+}

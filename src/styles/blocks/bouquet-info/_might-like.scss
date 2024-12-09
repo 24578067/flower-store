@@ -1,0 +1,29 @@
+.might-like {
+    margin-top: 60px;
+}
+
+.might-like__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+
+    & .title {
+        text-align: center;
+
+        & .title-2 {
+            text-transform: none;
+        }
+       
+    }
+
+    & .flowers {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 45px;
+    }
+}
+
+
+
+

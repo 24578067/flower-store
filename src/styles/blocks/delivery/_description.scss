@@ -1,0 +1,44 @@
+.description__content__text {
+    table {
+        text-align: left;
+        font-size: 17px;
+        line-height: 1.5;
+        border-spacing: 5px;
+
+        th {
+            color: var(--accent-color);
+            font-weight: 500;
+            background-color: #EDF8EF;
+            padding: 10px;
+            margin-right: 5px;
+        }
+
+        td {
+            font-weight: 300;
+            padding: 10px;
+        }
+
+        & .active {
+            background-color: #F8F8F8;
+        }
+    }
+
+    & .span-reg {
+        font-weight: 400;
+    }
+
+    & .delivery-point {
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            padding: 10px 20px;
+            background-color: #EDF8EF;
+            color: var(--accent-color);
+            border-radius: 40px;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}

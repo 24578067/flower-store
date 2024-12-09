@@ -1,0 +1,90 @@
+.description-fb {
+    margin: 60px 0;
+    
+    &__content {
+        display: flex;
+        column-gap: 30px;
+        
+        &__text {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            max-width: 825px;
+    
+            & .red-line {
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+            }
+        }
+
+        @include media-down($lg) {
+            display: block;
+        }
+    }
+
+    @include media-down($lg) {
+        margin: 40px 0;
+    }
+
+    @include media-down($md) {
+        margin: 30px 0;
+    }
+}
+
+.description-fb__content__text {
+    & .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+
+        button {
+            margin: 0;
+            font-size: 14px;
+            padding: 10px 20px;
+        }
+    }
+
+    & .comment-pages {
+        display: flex;
+        column-gap: 30px;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        margin-top: 30px;
+        color: var(--accent-color);
+
+        button {
+            &:first-child {
+                color: var(--black-color);
+                opacity: 42%;
+            }
+        }
+
+        @include media-down($lg) {
+            column-gap: 20px;
+        }
+
+        @include media-down($md) {
+            column-gap: 15px;
+        }
+    }
+}
+
+.active-page {
+    position: relative;
+    color: var(--black-color);
+    font-weight: 500;
+
+    &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        left: 50%;
+        transform: translateX(-50%); 
+        bottom: -15px;
+        width: 30px;
+        height: 2px;
+        background-color: var(--black-color);
+    }
+}

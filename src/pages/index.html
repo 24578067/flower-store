@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @@include('base/meta.html', { "title": "index.html" })
+    @@include('base/styles.html')
+  </head>
+
+  <body>
+    @@include('blocks/header.html') @@include('blocks/header-slider.html')
+    @@include('blocks/parameters-block.html', {"title": "Доставка цветов в Москве"}) 
+    @@include('blocks/season-offer.html', {titleClass: "season-offer__title", title: "Сезонное предложение", btnClass: "season-offer__btn", btnText: "Смотреть все"})
+    <hr class="line" />
+    @@include('blocks/best-seller.html', {titleClass: "season-offer__title", title: "Хит продаж", btnClass: "season-offer__btn", btnText: "Смотреть все"})
+    <hr class="line" />
+    @@include('blocks/with-action.html', {titleClass: "season-offer__title", title: "Со скидкой", btnClass: "season-offer__btn", btnText: "Смотреть все"})
+    <hr class="line" />
+    @@include('blocks/roses.html', {titleClass: "season-offer__title", title: "Розы", btnClass: "season-offer__btn", btnText: "Смотреть все"}) 
+    @@include('blocks/view-catalog-btn.html', {sectionClass: "view-catalog__margin"})
+    @@include('blocks/flower-centers.html')
+    <hr class="line" />
+    @@include('blocks/feedback.html')
+    <hr class="line" />
+    @@include('blocks/articles.html') 
+    @@include('blocks/news.html')
+    @@include('blocks/subscribe.html') 
+    @@include('blocks/advantages.html')
+    @@include('blocks/footer.html') 
+    @@include('base/scripts.html')
+  </body>
+</html>

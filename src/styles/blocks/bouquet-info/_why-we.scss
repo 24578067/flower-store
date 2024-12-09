@@ -1,0 +1,44 @@
+.why-we {
+    margin: 60px 0;
+}
+
+.why-we__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    & .title-2 {
+        text-align: center;
+        text-transform: none;
+    }
+}
+
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(0, 0, 0, .1);
+    border-radius: 10px;
+
+    &-card {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        padding: 30px;
+
+        &:first-child {
+            padding-right: 0;
+        }
+
+        &:last-child {
+            padding-left: 0;
+        }
+
+        p {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            font-size: 22px;
+        }
+    }
+
+}
